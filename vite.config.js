@@ -5,6 +5,6 @@ import { svelte } from "@sveltejs/vite-plugin-svelte";
 // GitHub Pages URLs are case-sensitive path segments. Repo: JUW-MicroSlides
 // If you ever rename the repo, update this string to match.
 export default defineConfig({
-  base: "/JUW-MicroSlides/",
+  base: "/JUW-MicroSlides-/",
   plugins: [svelte()],
 });
