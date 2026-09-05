@@ -8,4 +8,3 @@ export default defineConfig({
   base: "/JUW-MicroSlides/",
   plugins: [svelte()],
 });
-
