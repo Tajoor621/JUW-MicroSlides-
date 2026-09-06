@@ -1,5 +1,7 @@
 import { toBase64 } from "../loadAsset.js";
 import { academicClean } from "../../themes/academic-clean.js";
+import sealUrl from "../../../assets/logos/juw-seal.png?url";
+import microUrl from "../../../assets/logos/microbiology-logo.png?url";
 
 const SLIDE_W = 10;
 const SLIDE_H = 5.63;
@@ -13,8 +15,8 @@ export async function buildTitleSlide(pres, data) {
   const theme = academicClean; // Phase 1: only theme implemented
   const slide = pres.addSlide();
 
-  const sealData = await toBase64("/assets/logos/juw-seal.png");
-  const microData = await toBase64("/assets/logos/microbiology-logo.png");
+  const sealData = await toBase64(sealUrl);
+  const microData = await toBase64(microUrl);
 
   slide.background = { color: theme.frameColor };
 
