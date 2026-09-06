@@ -1,5 +1,7 @@
 <script>
   import { academicClean } from "../themes/academic-clean.js";
+  import sealUrl from "../../assets/logos/juw-seal.png?url";
+  import microUrl from "../../assets/logos/microbiology-logo.png?url";
 
   export let courseTitle = "";
   export let courseCode = "";
@@ -27,7 +29,7 @@
   >
     <!-- university seal, top-left -->
     <img
-      src="/assets/logos/juw-seal.png"
+      src={sealUrl}
       alt="Jinnah University for Women seal"
       class="absolute object-contain"
       style="left: 3.5%; top: 6.2%; width: 11%; height: 19.5%;"
@@ -35,7 +37,7 @@
 
     <!-- microbiology logo, top-right -->
     <img
-      src="/assets/logos/microbiology-logo.png"
+      src={microUrl}
       alt="Department of Microbiology logo"
       class="absolute object-contain"
       style="right: 3.5%; top: 6.2%; width: 11%; height: 19.5%;"
